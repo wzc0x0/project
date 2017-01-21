@@ -21,8 +21,16 @@
 
 .nav_wrapper { margin: 10px auto 0; width: 1200px; z-index: 2; clear: both; height: 44px; }
 .nav_wrapper .nav_list { background: none; margin: 0 auto; padding: 0; text-align: center; }
+.nav_wrapper .nav_list .hot { color: #fc0000; }
 .nav_wrapper .nav_list li { display: inline-block; position: relative; font-family: 微软雅黑, "microsoft yahei", 宋体; }
 .nav_wrapper .nav_list li .curr { color: #bfbfbf !important; border-bottom: 2px solid #727071; }
 .nav_wrapper .nav_list li a { display: inline-block; padding: 12px 15px 10px; margin: 0 6px; height: 20px; line-height: 20px; font-size: 15px; color: #eee; border-bottom: 2px solid #333; z-index: 2; }
 
-/*# sourceMappingURL=index.css.map */
+.header2 { width: 100%; }
+.header2 .nav_box { height: 42px; background: #f7f7f7; border-bottom: 1px solid #fff; }
+.header2 .nav_box .nav { width: 1200px; margin: auto; position: relative; text-align: center; }
+.header2 .nav_box .nav li { margin: 0 auto; display: inline-block; height: 42px; position: relative; }
+.header2 .nav_box .nav li a { display: inline-block; height: 42px; line-height: 42px; margin-right: 5px; }
+.header2 .nav_box .nav li a span { display: inline-block; height: 41px; overflow: hidden; line-height: 42px; font-size: 14px; color: #000; cursor: pointer; width: 60px; text-align: center; border-left: #f7f7f7 1px solid; border-right: #f7f7f7 1px solid; border-top: #f7f7f7 1px solid; position: relative; }
+
+/*# sourceMappingURL=head.css.map */
