@@ -1,0 +1,8 @@
+.head_wrapper { width: 100%; background: #333333; }
+.head_wrapper .head { width: 1200px; height: 83px; margin: 0 auto; padding: 10px 0 0; }
+.head_wrapper .head .top_wrapper { position: relative; }
+.head_wrapper .head .top_wrapper .shorcut { float: left; width: 400px; margin: -8px 0 0; }
+.head_wrapper .head .top_wrapper .shorcut li { display: inline-block; }
+.head_wrapper .head .top_wrapper .shorcut a { color: #d7d7d7; padding: 0 5px; }
+
+/*# sourceMappingURL=index.css.map */
