@@ -1,0 +1,106 @@
+.home_wrapper{
+  width: 100%;
+  .home_box{
+    width: 1200px;
+    margin: auto;
+    padding: 20px 0 30px;
+    h3{
+      padding: 0 0 20px;
+      text-align: center;
+      img{
+        display: inline-block;
+      }
+    }
+    .home_banner{
+      height: 610px;
+      margin: 0 auto;
+      padding: 0 0 20px;
+      position: relative;
+      overflow: hidden;
+      .temp_wrapper{
+        width: 1200px;
+        height: 610px;
+        margin: 0 auto;
+        padding: 0 0 20px;
+        position: relative;
+        overflow: hidden;
+        ul{
+          width: 4800px;
+          position: relative;
+          overflow: hidden;
+          li{
+            float: left;
+            width: 1200px;
+            height: 610px;
+          }
+        }
+        .marquee{
+          width: 1200px;
+          margin: 0 auto;
+          overflow: hidden;
+          height: 15px;
+          text-align: center;
+          position: absolute;
+          left: 0;
+          bottom: 40px;
+          ul{
+            height: 15px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            zoom: 1;
+            margin: 0 0 0 -35px;
+            z-index: 10;
+            li{
+              float: left;
+              display: block;
+              width: 15px;
+              height: 15px;
+              line-height: 15px;
+              margin: 0 5px;
+              text-align: center;
+              background: #ccc;
+              color: #ccc;
+              border-radius: 50%;
+              cursor: pointer;
+              text-indent: -9999em;
+            }
+          }
+        }
+      }
+    }
+  }
+  .home_shorcut{
+    width: 1170px;
+    margin: 0 auto;
+    height: 86px;
+    padding: 0 0 20px 30px;
+    a{
+      float: left;
+      display: block;
+      width: 250px;
+      height: 86px;
+      margin: 0 60px 0 0;
+      background: url(../images/shortcut3a.jpg) no-repeat;
+      transition: all .3s;
+    }
+    .share{
+      background-position: 0 0;
+    }
+    .news{
+      background-position: -250px 0;
+    }
+    .gift{
+      background-position: -745px 0;
+    }
+    .invitation{
+      width: 215px;
+      background-position: -985px 0;
+      margin: 0;
+    }
+  }
+  .home_goods{
+    width: 1200px;
+    margin: auto;
+  }
+}
