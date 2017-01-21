@@ -1,0 +1,8 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+fieldset,img{border:0;}
+img{display: block;}
+li{list-style:none;}
+a{text-decoration: none;color: #333;}
+em{font-style:normal}
+body{font-family:"microsoft yahei";color:#333;font-size:12px;background:#fff;}
+.clear:after{content:".";height:0;display:block;overflow:hidden;visibility:hidden;clear:both;}
