@@ -4,17 +4,41 @@
   .foot{
     padding-bottom: 20px;
     margin: auto;
-    .search_info{
+    .service_info{
       background: #ebebeb;
       border-top: #9a9a9a 3px solid;
       margin: 0 0 15px 0;
       height: 160px;
       padding-top: 20px;
       .service_bar{
-        height: 125px;
-        margin: 10px 100px 0 0;
-        display: inline;
-        width: 183px;
+        margin: auto;
+        width: 1200px;
+        .cs{
+          height: 125px;
+          margin: 10px 100px 0 0;
+          width: 183px;
+          float: left;
+          a{
+            display: inline-block;
+          }
+        }
+        table{
+          float: left;
+          th{
+            font-size: 14px;
+            text-align: left;
+            padding-bottom: 10px;
+          }
+          tr{
+            td{
+              line-height: 20px;
+              cursor: pointer;
+              &:hover{
+                color: orange;
+              }
+            }
+          }
+        }
         .customer{
           background: url("../images/footer_sprite.gif") no-repeat left -86px;
           width: 183px;
@@ -31,6 +55,92 @@
           width: 183px;
           height: 35px;
         }
+        .wchat{
+          float: right;
+          width: 95px;
+          padding-right: 0;
+          p{
+            width: 100%;
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-weight: bold;
+          }
+          .qcode{
+            background: url(../images/footer_sprite.gif) no-repeat -189px -87px;
+            width: 85px;
+            height: 85px;
+            margin-left: 2px;
+          }
+        }
+      }
+    }
+    .foot_link{
+      .link_cont{
+        line-height: 32px;
+        clear: both;
+        min-width: 1000px;
+        ul{
+          text-align: center;
+          li{
+            display: inline;
+            text-align: center;
+            color: #ccc;
+            a{
+              margin: 0 8px 0 6px;
+              color: #000;
+              &:hover{
+                color: orange;
+              }
+            }
+          }
+        }
+      }
+    }
+    .foot_btn{
+      width: 630px;
+      height: 50px;
+      padding: 10px 0px;
+      margin: 0 auto;
+      a{
+        background: url(../images/foot_icons.jpg) no-repeat;
+        width: 145px;
+        height: 44px;
+        margin-left: 47px;
+        display: inline-block;
+        float: left;
+      }
+      .zp{
+        background-position: -192px 0;
+      }
+      .sh{
+        background-position: -385px 0;
+      }
+    }
+    .copyright{
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      color: rgb(153, 153, 153);
+      font-family: Tahoma, Geneva, sans-serif, 宋体;
+      clear: both;
+      min-width: 1000px;
+      a{
+        margin: 0 3px;
+        color: #999;
+        font-weight: bold;
+      }
+    }
+    .des{
+      height: 100%;
+      overflow: hidden;
+      padding: 10px 0;
+      width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      img{
+        margin-left: 12px;
+        display: inline-block;
+        vertical-align: middle;
       }
     }
   }

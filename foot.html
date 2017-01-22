@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="css/foot.css">
     <script src="js/lib/jquery.min.js"></script>
     <script>
-        let footerImg = [{"src":"images/74.jpg"}]
+        $(window).load(function () {
+            let footerImg = [{"src":"images/74.jpg"},{"src":"images/75.jpg"},{"src":"images/76.jpg"},
+                {"src":"images/77.jpg"},{"src":"images/78.jpg"}]
+            getImg(footerImg)
+        })
+        function getImg(json) {
+            for(let i = 0 ;i<json.length;i++){
+                $(".des img").eq(i).attr({"src":json[i]["src"]})
+            }
+        }
     </script>
 </head>
 <body>
