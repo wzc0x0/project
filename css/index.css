@@ -16,5 +16,9 @@
 .home_wrapper .home_shorcut .gift { background-position: -745px 0; }
 .home_wrapper .home_shorcut .invitation { width: 215px; background-position: -985px 0; margin: 0; }
 .home_wrapper .home_goods { width: 1200px; margin: auto; }
+.home_wrapper .home_goods h3 { padding: 0 0 20px; text-align: center; }
+.home_wrapper .home_goods ul { margin: 0 0 40px; }
+.home_wrapper .home_goods ul li { float: left; width: 400px; margin: 0; }
+.home_wrapper .home_goods ul li a { display: block; width: 100%; height: 100%; position: relative; background: #fff; line-height: 0; }
 
 /*# sourceMappingURL=index.css.map */
