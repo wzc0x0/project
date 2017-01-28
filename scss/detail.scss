@@ -406,5 +406,89 @@
         }
       }
     }
+    .nav{
+      float: left;
+      width: 1000px;
+      background: #efefef;
+      z-index: 9999;
+      .goods_nav{
+        background: url(../images/detail/goods_info.gif) repeat-x left -1686px;
+        height: 38px;
+        line-height: 38px;
+        position: relative;
+        ul{
+          margin: 0;
+          position: absolute;
+          left: 0;
+          top: 0;
+          li{
+            float: left;
+            width: 140px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            margin-left: 0;
+            background: #efefef;
+            border-right: 1px solid #fff;
+            cursor: pointer;
+            font-family: Tahoma, Geneva, sans-serif;
+            a{
+              text-align: center;
+              font-size: 14px;
+              color: #000;
+              display: block;
+              width: 140px;
+              height: 35px;
+              line-height: 35px;
+            }
+          }
+          .on{
+            a{
+              background: #ea7514;
+              height: 36px;
+              color: #ffffff;
+              font-weight: 900;
+            }
+          }
+        }
+      }
+      .shopping_bags{
+        position: absolute;
+        right: 0;
+        bottom: 2px;
+        width: 260px;
+        text-align: right;
+        padding-right: 17px;
+        height: 35px;
+        font-size: 18px;
+        color: #cc1700;
+        font-family: Tahoma, Geneva, sans-serif;
+        span{
+          display: inline-block;
+          background: url(../images/detail/goods_info.gif) no-repeat -264px -1088px;
+          padding-left: 10px;
+        }
+        a{
+          display: inline-block;
+          vertical-align: top;
+          width: 98px;
+          height: 26px;
+          background: url(../images/detail/goods_info.gif) no-repeat left -1440px;
+          margin: 5px 0 0 5px;
+        }
+      }
+    }
+    .main_content{
+      width: 1000px;
+      .con_left{
+        width: 775px;
+        float: left;
+      }
+      .con_right{
+        width: 210px;
+        float: right;
+        margin-top: 26px;
+      }
+    }
   }
 }
