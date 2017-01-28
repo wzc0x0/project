@@ -5,7 +5,8 @@
 .main .pro_con .con_main { width: 100%; overflow: hidden; clear: both; margin-bottom: 30px; }
 .main .pro_con .con_main .p_map { width: 412px; float: left; }
 .main .pro_con .con_main .p_map .b_map { border: 1px solid #ccc; position: relative; height: 536px; width: 402px; z-index: 1; }
-.main .pro_con .con_main .p_map .b_map .big_pic { overflow: hidden; z-index: 100; top: 0; position: absolute; width: 402px; height: 536px; opacity: 1; left: 415px; display: none; }
+.main .pro_con .con_main .p_map .b_map .magic_cup { cursor: move; z-index: 101; position: absolute; overflow: hidden; width: 200px; height: 200px; opacity: 0.5; display: none; background: #ffffff; border: 1px solid #aaa; }
+.main .pro_con .con_main .p_map .b_map .big_pic { overflow: hidden; z-index: 10; top: 0; position: absolute; width: 402px; height: 536px; opacity: 1; left: 415px; display: none; border: 1px solid #333333; }
 .main .pro_con .con_main .p_map .s_map { margin-top: 8px; width: 405px; height: 100%; overflow: hidden; }
 .main .pro_con .con_main .p_map .s_map .dc { background: url(../images/detail/goods_info.gif) no-repeat left -187px; height: 98px; width: 72px; margin: 2px 4px 0 4px; display: inline; overflow: hidden; }
 .main .pro_con .con_main .p_map .s_map li { float: left; margin: 5px 4px 0 4px; display: inline; width: 73px; height: 98px; background: url(../images/detail/goods_info.gif) no-repeat -200px -333px; overflow: hidden; position: relative; }

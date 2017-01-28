@@ -34,6 +34,18 @@
           height: 536px;
           width: 402px;
           z-index: 1;
+          .magic_cup{
+            cursor: move;
+            z-index: 101;
+            position: absolute;
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            opacity: 0.5;
+            display: none;
+            background: #ffffff;
+            border: 1px solid #aaa;
+          }
           .big_pic{
             overflow: hidden;
             z-index: 100;
@@ -44,6 +56,7 @@
             opacity: 1;
             left: 415px;
             display: none;
+            border: 1px solid #333333;
           }
         }
         .s_map{
