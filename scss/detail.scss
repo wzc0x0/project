@@ -483,6 +483,63 @@
       .con_left{
         width: 775px;
         float: left;
+        .contents{
+          padding: 5px 0 15px 0;
+          width: 774px;
+          line-height: 22px;
+          overflow: hidden;
+          color: #646464;
+          h5{
+            height: 25px;
+            line-height: 25px;
+            padding: 0 0 0 16px;
+            font-size: 14px;
+            font-weight: bold;
+            background: #f3f3f3;
+            color: #333;
+            margin: 20px 0;
+            float: left;
+            width: 757px;
+          }
+          table{
+            width: 100%;
+            border-collapse: collapse;
+            td{
+              height: 30px;
+              line-height: 20px;
+              padding-left: 10px;
+              border: 1px solid #ebebeb;
+              b{
+                display: inline-block;
+              }
+            }
+          }
+          .size_pic{
+            overflow: hidden;
+            clear: both;
+            img{
+              text-align: left;
+            }
+          }
+          .desc_pic{
+            padding-top: 10px;
+          }
+          .desc_pic img:last-of-type{
+            padding-top: 15px;
+          }
+          .present{
+            width: 760px;
+            margin: auto;
+            padding-top: 20px;
+            .content_tips{
+              color: red;
+              font-weight: bold;
+              width: 5.5em;
+              height: 2em;
+              float: left;
+            }
+          }
+        }
       }
       .con_right{
         width: 210px;

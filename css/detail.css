@@ -72,6 +72,17 @@
 .main .pro_con .nav .shopping_bags a { display: inline-block; vertical-align: top; width: 98px; height: 26px; background: url(../images/detail/goods_info.gif) no-repeat left -1440px; margin: 5px 0 0 5px; }
 .main .pro_con .main_content { width: 1000px; }
 .main .pro_con .main_content .con_left { width: 775px; float: left; }
+.main .pro_con .main_content .con_left .contents { padding: 5px 0 15px 0; width: 774px; line-height: 22px; overflow: hidden; color: #646464; }
+.main .pro_con .main_content .con_left .contents h5 { height: 25px; line-height: 25px; padding: 0 0 0 16px; font-size: 14px; font-weight: bold; background: #f3f3f3; color: #333; margin: 20px 0; float: left; width: 757px; }
+.main .pro_con .main_content .con_left .contents table { width: 100%; border-collapse: collapse; }
+.main .pro_con .main_content .con_left .contents table td { height: 30px; line-height: 20px; padding-left: 10px; border: 1px solid #ebebeb; }
+.main .pro_con .main_content .con_left .contents table td b { display: inline-block; }
+.main .pro_con .main_content .con_left .contents .size_pic { overflow: hidden; clear: both; }
+.main .pro_con .main_content .con_left .contents .size_pic img { text-align: left; }
+.main .pro_con .main_content .con_left .contents .desc_pic { padding-top: 10px; }
+.main .pro_con .main_content .con_left .contents .desc_pic img:last-of-type { padding-top: 15px; }
+.main .pro_con .main_content .con_left .contents .present { width: 740px; margin: auto; padding-top: 20px; }
+.main .pro_con .main_content .con_left .contents .present .content_tips { color: red; font-weight: bold; width: 5.5em; height: 2em; float: left; }
 .main .pro_con .main_content .con_right { width: 210px; float: right; margin-top: 26px; }
 
 /*# sourceMappingURL=detail.css.map */
