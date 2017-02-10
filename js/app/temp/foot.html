@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>底部</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <script src="js/lib/jquery.min.js"></script>
+    <script>
+        $(window).load(function () {
+            let footerImg = [{"src":"images/74.jpg"},{"src":"images/75.jpg"},{"src":"images/76.jpg"},
+                {"src":"images/77.jpg"},{"src":"images/78.jpg"}]
+            getImg(footerImg)
+        })
+        function getImg(json) {
+            for(let i = 0 ;i<json.length;i++){
+                $(".des img").eq(i).attr({"src":json[i]["src"]})
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="foot_wrapper">
+        <div class="foot">
+            <div class="service_info">
+                <div class="service_bar">
+                    <div class="cs">
+                        <a href="" class="customer"></a>
+                        <a href="" class="phone"></a>
+                        <a href="" class="email"></a>
+                    </div>
+                    <table cellpadding="0" width="760px">
+                        <tr class="tbody">
+                            <th>新手入门</th>
+                            <th>配送方式</th>
+                            <th>支付方式</th>
+                            <th>售后服务</th>
+                        </tr>
+                        <tr>
+                            <td>购物流程</td>
+                            <td>海外配送说明</td>
+                            <td>在线支付</td>
+                            <td>退换货自助申请</td>
+                        </tr>
+                        <tr>
+                            <td>会员等级与升级</td>
+                            <td>配送运费</td>
+                            <td>货到付款</td>
+                            <td>退换货政策</td>
+                        </tr>
+                        <tr>
+                            <td>我的走秀</td>
+                            <td>配送查询</td>
+                            <td>银行汇款</td>
+                            <td>退换货流程</td>
+                        </tr>
+                        <tr>
+                            <td>常见问题</td>
+                            <td></td>
+                            <td></td>
+                            <td>退款说明</td>
+                        </tr>
+                        <tr>
+                            <td>手机走秀</td>
+                            <td></td>
+                            <td></td>
+                            <td>CEO邮箱</td>
+                        </tr>
+                    </table>
+                    <div class="wchat">
+                        <p>走秀微信客服</p>
+                        <p class="qcode"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_link">
+                <div class="link_cont">
+                    <ul>
+                        <li><a href="">关于走秀</a>|</li>
+                        <li><a href="">About us</a>|</li>
+                        <li><a href="">媒体报道</a>|</li>
+                        <li><a href="">品牌招商</a>|</li>
+                        <li><a href="">加入走秀</a>|</li>
+                        <li><a href="">网站地图</a>|</li>
+                        <li><a href="">联系我们</a>|</li>
+                        <li><a href="">品牌大全</a>|</li>
+                        <li><a href="">邮件订阅</a>|</li>
+                        <li><a href="">品牌专题</a>|</li>
+                        <li><a href="">WAP站点</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot_btn">
+                <a href=""></a>
+                <a href="" class="zp"></a>
+                <a href="" class="sh"></a>
+            </div>
+            <div class="copyright">
+                Copyright © 2008-2017
+                <a href="">Xiu.com</a>
+                深圳走秀网络科技有限公司 版权所有 .
+                <a href="">粤ICP备07502993号</a>
+            </div>
+            <div class="des">
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,92 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/app.module.js"></script>
+    <script src="js/app/head.directive.js"></script>
+    <script src="js/app/banner.directive.js"></script>
+    <script src="js/app/foot.directive.js"></script>
+    <script src="js/app/index.component.js"></script>
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body>
-<div class="header"></div>
+<head-com></head-com>
     <div class="home_wrapper">
         <div class="home_box">
-            <div class="home_banner">
-                <div class="temp_wrapper">
-                    <ul>
-                        <li><a href=""><img src="images/2.jpg" alt=""></a></li>
-                        <li><a href=""><img src="images/3.jpg" alt=""></a></li>
-                        <li><a href=""><img src="" alt=""></a></li>
-                        <li><a href=""><img src="" alt=""></a></li>
-                    </ul>
-                    <div class="marquee">
-                        <ul>
-                            <li>1</li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="home_shorcut">
-                <a href="" class="share"></a>
-                <a href="" class="news"></a>
-                <a href="" class="gift"></a>
-                <a href="" class="invitation"></a>
-            </div>
-            <div class="home_goods">
-                <h3><img src="images/4.jpg" alt=""></h3>
-                <ul class="clear">
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                </ul>
-                <ul class="clear">
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                </ul>
-                <ul class="clear">
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                </ul>
-                <ul class="clear">
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                </ul>
-                <ul class="clear">
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                </ul>
-                <ul class="clear">
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                </ul>
-            </div>
+            <banner-slide></banner-slide>
+            <home-goods></home-goods>
+            <home-hot></home-hot>
+            <home-find></home-find>
         </div>
     </div>
-<div class="footer"></div>
+<foot-com></foot-com>
 </body>
 </html>

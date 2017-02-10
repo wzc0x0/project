@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/head.css">
+<div class="head_wrapper">
+    <div class="head">
+        <div class="top_wrapper">
+            <div class="shorcut">
+                <ul class="top_link">
+                    <li class="login"><a href="">登陆/注册</a></li>
+                    <li class="my_bag">
+                        <a href="" class="my_bag_cart">购物袋
+                            <i class="redx">0</i>件
+                        </a>
+                        <div class="mybag_con">
+                            <div class="my_cart">
+                                <span>购物袋暂时没有商品!</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="myxiu">
+                        <a href="" class="myxiu_down">我的走秀</a>
+                        <div class="myxiu_menu">
+                            <a href="">我的订单</a>
+                            <a href="">自助退货</a>
+                            <a href="">我的收藏</a>
+                            <a href="">帮助中心</a>
+                            <a href="">全部吐槽</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo_m">
+                <a href=""></a>
+            </div>
+            <div class="search_wrapper">
+                <form action="">
+                    <div class="search_box">
+                        <label for="search">请搜索相关产品</label>
+                        <input type="text" name="search">
+                        <input type="submit" value="" class="search_btn">
+                    </div>
+                </form>
+            </div>
+            <div class="clear"></div>
+            <div class="nav_wrapper">
+                <ul class="nav_list">
+                    <li><a href="" class="curr">首页</a></li>
+                    <li><a href="">新品</a></li>
+                    <li><a href="">男士</a></li>
+                    <li><a href="">女士</a></li>
+                    <li><a href="">品牌</a></li>
+                    <li><a href=""><span class="hot">发现</span></a></li>
+                    <li><a href="">专题</a></li>
+                    <li><a href="">手机走秀</a></li>
+                </ul>
+                <div class="fix_wrap">
+                    <ul class="nav_list">
+                        <li><a href="" class="curr">首页</a></li>
+                        <li><a href="">新品</a></li>
+                        <li><a href="">男士</a></li>
+                        <li><a href="">女士</a></li>
+                        <li><a href="">品牌</a></li>
+                        <li><a href=""><span class="hot">发现</span></a></li>
+                        <li><a href="">专题</a></li>
+                        <li><a href="">手机走秀</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header2">
+    <div class="nav_box">
+        <div class="nav" ng-controller="create">
+            <ul>
+                <li class="select_bar" ng-repeat="n in nav">
+                    <a href=""><span ng-bind="n"></span></a>
+                    <sub-menu></sub-menu>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

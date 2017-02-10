@@ -5,6 +5,47 @@
     <title>首页</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/head.css">
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/app.module.js"></script>
+    <script src="js/head.js"></script>
+    <script>
+        var app = angular.module("myApp")
+        app.component("subMenu",{
+            templateUrl:"js/app/temp/submenu.html"
+        })
+        app.controller("create",["$scope",function ($scope) {
+                $scope.nav = ["包袋","服装","鞋靴","腕表","配饰","妆品","生活","婴童","豪车"]
+            }])
+    </script>
+    <script>
+        /*$(function () {
+            $(".select_bar").on({
+                "mousemove":function () {
+                    var cur = $(".select_bar").index($(this))
+                    if(cur > 2){
+                        $(".sub_menu").eq(cur).css({"left":-71.5*(cur-2)})
+                    }
+                    $(".sub_menu").eq(cur).stop().show()
+                    $(".select_bar").removeClass("selected")
+                    $(this).addClass("selected")
+                },
+                "mouseleave":function () {
+                    $(".select_bar").removeClass("selected")
+                    $(".sub_menu").stop().hide()
+                }
+            })
+            $(document).scroll(function () {
+                if($(this).scrollTop() >= 130){
+                    $(".header2").addClass("fix_top")
+                    $(".fix_wrap").css("display","block")
+                }else {
+                    $(".fix_wrap").css("display","none")
+                    $(".header2").removeClass("fix_top")
+                }
+            })
+        })*/
+    </script>
 </head>
 <body>
     <div class="head_wrapper">
@@ -14,14 +55,24 @@
                     <ul class="top_link">
                         <li class="login"><a href="">登陆/注册</a></li>
                         <li class="my_bag">
-                            <a href="">购物袋</a>
-                            <i class="redx">0</i>
-                            件
-                            <div class="mybag_con" style="display: none"></div>
+                            <a href="" class="my_bag_cart">购物袋
+                                <i class="redx">0</i>件
+                            </a>
+                            <div class="mybag_con">
+                                <div class="my_cart">
+                                    <span>购物袋暂时没有商品!</span>
+                                </div>
+                            </div>
                         </li>
                         <li class="myxiu">
-                            <a href="">我的走秀</a>
-                            <div class="myxiu_menu" style="display: none"></div>
+                            <a href="" class="myxiu_down">我的走秀</a>
+                            <div class="myxiu_menu">
+                                <a href="">我的订单</a>
+                                <a href="">自助退货</a>
+                                <a href="">我的收藏</a>
+                                <a href="">帮助中心</a>
+                                <a href="">全部吐槽</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -49,23 +100,30 @@
                         <li><a href="">专题</a></li>
                         <li><a href="">手机走秀</a></li>
                     </ul>
+                    <div class="fix_wrap">
+                        <ul class="nav_list">
+                            <li><a href="" class="curr">首页</a></li>
+                            <li><a href="">新品</a></li>
+                            <li><a href="">男士</a></li>
+                            <li><a href="">女士</a></li>
+                            <li><a href="">品牌</a></li>
+                            <li><a href=""><span class="hot">发现</span></a></li>
+                            <li><a href="">专题</a></li>
+                            <li><a href="">手机走秀</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="header2">
         <div class="nav_box">
-            <div class="nav">
+            <div class="nav" ng-controller="create" ng-app="myApp">
                 <ul>
-                    <li><a href=""><span>包装</span></a></li>
-                    <li><a href=""><span>服装</span></a></li>
-                    <li><a href=""><span>鞋靴</span></a></li>
-                    <li><a href=""><span>腕表</span></a></li>
-                    <li><a href=""><span>配饰</span></a></li>
-                    <li><a href=""><span>妆品</span></a></li>
-                    <li><a href=""><span>生活</span></a></li>
-                    <li><a href=""><span>婴童</span></a></li>
-                    <li><a href=""><span>豪车</span></a></li>
+                    <li class="select_bar" ng-repeat="n in nav">
+                        <a href=""><span ng-bind="n"></span></a>
+                        <sub-menu></sub-menu>
+                    </li>
                 </ul>
             </div>
         </div>

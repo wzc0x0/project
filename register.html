@@ -5,6 +5,70 @@
     <title>注册/登陆</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/register.css">
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/qrcode.min.js"></script>
+    <script>
+        $(function () {
+            $(".login_tab li").on({
+                mouseenter:function () {
+                    $(".login_tab a").removeClass("active")
+                    $(this).find("a").addClass("active")
+                    if($(this).hasClass("pwd_login")){
+                        $(".phone_login_btn").hide()
+                        $(".msg_code input").animate({"width":280})
+                    }else{
+                        $(".msg_code input").css("width",165)
+                        $(".phone_login_btn").show()
+                    }
+                }
+            })
+            $("input[type=text]").on({
+                focus:function () {
+                    $(this).css({"outline":0,"borderColor":"#7fbfe7"})
+                    $(this).next().css("top", -10)
+                },
+                blur:function () {
+                    var cur = $(this).val().trim()
+                    if(cur == ""){
+                        $(this).parent().prev().show()
+                        $(this).next().css("top",9)
+                    }else {
+                        $(this).css({"outline":0,"borderColor":"#d8d8d8"})
+                        $(this).parent().prev().hide()
+                    }
+                }
+            })
+            var flag = true
+            $(".auto_login").on("click",function () {
+                if(flag){
+                    $(this).find("span").addClass("disable_checked")
+                    $(this).children(".alert_tip").show()
+                }
+                else {
+                    $(this).children(".alert_tip").hide()
+                    $(this).find("span").removeClass("disable_checked")
+                }
+                flag = !flag
+            })
+            $(".login_code,.login_pcgo").on("click",function () {
+                if($(this).hasClass("login_code")){
+                   // console.log($(this))
+                    $(".login_panel").eq(0).hide()
+                    $(".login_panel").eq(1).show().css("height",450)
+                }else {
+                    $(".login_panel").eq(0).show()
+                    $(".login_panel").eq(1).hide()
+                }
+            })
+            var qrcode = new QRCode(document.getElementById("q_code_img"),{
+                text:"http://www.xiu.com",
+                colorDark:"#000",
+                colorLight:"#fff",
+                correctLevel : QRCode.CorrectLevel.H
+            })
+        })
+    </script>
+
 </head>
 <body>
     <div class="head">
@@ -22,8 +86,8 @@
                     <div class="login_panel">
                         <div class="login_tab">
                             <ul>
-                                <li ><a href="" class="active">短信登录</a></li>
-                                <li><a href="">密码登陆</a></li>
+                                <li ><a href="#" class="active">短信登录</a></li>
+                                <li class="pwd_login"><a href="#">密码登陆</a></li>
                             </ul>
                         </div>
                         <div class="login_form clear">
@@ -77,8 +141,19 @@
                                 <li><a href="" class="pa_api"></a></li>
                             </ul>
                         </div>
-                        <a href="" class="login_code"></a>
-                        <a href="" class="login_ewmg"></a>
+                        <a href="#" class="login_code"></a>
+                        <a href="#" class="login_ewmg"></a>
+                    </div>
+                    <div class="login_panel" style="display: none">
+                        <h3>手机扫码登录</h3>
+                        <div class="login_qcode">
+                            <div class="code_show">
+                                <div class="qr_code" id="q_code_img"></div>
+                                <p>打开<a href="#"><span>走秀App</span></a>，扫一扫登录</p>
+                            </div>
+                        </div>
+                        <a href="#" class="login_pcgo"></a>
+                        <a href="#" class="login_pwd"></a>
                     </div>
                 </form>
             </div>

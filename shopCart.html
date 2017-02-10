@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <div class="shopping_head">
+        <h1 class="logo">
+            <a href=""><b></b></a>
+        </h1>
+        <div class="column">
+            <p class="online_service">
+                <a href="" class="online">在线客服</a>
+                <span>客户热线(免长途费)：<b>400-888-4499</b></span>
+            </p>
+            <p class="online_service">
+                您好!欢迎光临走秀网!
+                <a href=""> [ 登录/注册 ] </a>
+                <span>|</span>
+                <a href=""> 帮助中心 </a>
+            </p>
+        </div>
+    </div>
+    <div class="my_shopping">
+        <div class="shopping_list">
+            <ul>
+                <li class="status"><span class="cur_on"></span>1.我的购物袋</li>
+                <li><span class="line_bg cur_on"></span>2.填写并核对订单信息</li>
+                <li><span class="line_bg"></span>3.成功提交订单</li>
+            </ul>
+        </div>
+    </div>
+    <div class="goods_wrap clear">
+        <div class="goods_list">
+            <table>
+                <tr>
+                    <th class="select_all">
+                        <div>
+                            <input type="checkbox" checked="true">
+                            &nbsp;全选
+                        </div>
+                    </th>
+                    <th colspan="2">商品</th>
+                    <th class="money">购买价(元)</th>
+                    <th>小计(元)</th>
+                    <th>数量</th>
+                    <th>操作</th>
+                </tr>
+                <tr class="goods_item">
+                    <td class="check_box">
+                        <input type="checkbox" checked="true">
+                    </td>
+                    <td class="goods_img">
+                        <a href="">
+                            <img src="images/detail/g1_66_88.jpg" alt="">
+                        </a>
+                    </td>
+                    <td class="goods_name">
+                        <div>
+                            <p>BOSS</p>
+                            <p>男士长衫羽绒服</p>
+                            <p>颜色：深蓝 尺码：EU46</p>
+                        </div>
+                    </td>
+                    <td class="goods_price">
+                        <p class="xiu_price"><a href="">¥ 6200</a></p>
+                        <p>¥ 5400</p>
+                        <div class="discount">
+                            <a href="">促销</a>
+                        </div>
+                    </td>
+                    <td class="total">
+                        ¥ 5400
+                    </td>
+                    <td>
+                        <a href="#" class="at">-</a>
+                        <input type="text" class="num" value="1">
+                        <a href="#" class="at">+</a>
+                    </td>
+                    <td>
+                        <span><a href="#">移至收藏夹</a></span><br>
+                        <span><a href="#">删除</a></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="no_goods" style="display: none">
+            <img src="images/nogoods.jpg" alt="">
+            <h2>
+                购物袋暂没有商品，现在就去
+                <a href="">挑选自己喜欢的商品</a>
+            </h2>
+        </div>
+        <div class="element_list"></div>
+        <div class="interest">
+            <div class="set_bar">
+                <h2>
+                    <a href="">看看您收藏的商品<b></b></a>
+                </h2>
+                <h2  class="interest_login">
+                    请
+                    <a href="">登陆</a>
+                    后查看您收藏的商品
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="foot_shopping">
+        <p>
+            Copyright © 2008-2017
+            <a href="">Xiu.com</a>
+            深圳走秀网络科技有限公司 版权所有 .
+            <a href="">粤ICP备07502993号</a>
+        </p>
+    </div>
+</body>
+</html>

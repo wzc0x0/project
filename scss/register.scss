@@ -96,6 +96,7 @@
           .err_meg{
             margin-top: 10px;
             margin-bottom: -5px;
+            display: none;
             label{
               color: #d2041f;
               line-height: 12px;
@@ -182,10 +183,24 @@
                 height: 16px;
                 background: url(../images/login_sprite.png) -180px 0 no-repeat;
               }
+              .disable_checked{background-position: -160px 0}
               input{
                 vertical-align: middle;
                 margin-right: 5px;
               }
+            }
+            .alert_tip{
+              line-height: 12px;
+              position: absolute;
+              color: #DE6907;
+              padding: 3px;
+              background-color: #FFFCD1;
+              border: 1px solid #F1D47C;
+              left: 0;
+              top: 22px;
+              width: 240px;
+              z-index: 10;
+              font-size: 12px;
             }
             .get_back{
               float: right;
@@ -287,5 +302,51 @@
         z-index: 100;
       }
     }
+  }
+}
+.login_panel{
+  h3{padding: 30px;font-weight: normal}
+  .login_qcode{
+    width: 300px;
+    margin: 40px auto;
+    text-align: center;
+    .code_show{
+      p{
+        font-size: 14px;
+        span{
+          color: #d2041f
+        }
+      }
+    }
+    .qr_code{
+      width: 150px;
+      height: 150px;
+      margin: 10px auto 30px;
+      padding: 10px;
+      border: 1px solid #efeff4;
+      position: relative;
+      img{
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+  .login_pcgo{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url(../images/login_sprite.png) -70px -400px no-repeat;
+    z-index: 100;
+  }
+  .login_pwd{
+    width: 85px;
+    height: 25px;
+    position: absolute;
+    right: 55px;
+    bottom: 12px;
+    z-index: 100;
+    background: url(../images/login_sprite.png) -100px -360px no-repeat;
   }
 }
